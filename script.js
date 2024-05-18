@@ -1,22 +1,33 @@
-let colorPickerContainer = document.getElementById("colorPickerContainer");
-let selectedColorHexCode = document.getElementById("selectedColorHexCode");
+let stopLightElement = document.getElementById("stopLight");
+let readyLightElement = document.getElementById("readyLight");
+let goLightElement = document.getElementById("goLight");
+let stopButtonElement = document.getElementById("stopButton");
+let readyButtonElement = document.getElementById("readyButton");
+let goButtonElement = document.getElementById("goButton");
 
-function changeToBeGray() {
-    colorPickerContainer.style.backgroundColor = "#e0e0e0";
-    selectedColorHexCode.textContent = "#e0e0e0";
+function turnOnRed() {
+  stopLightElement.style.backgroundColor = "#cf1124";
+  readyLightElement.style.backgroundColor = "#4b5069";
+  goLightElement.style.backgroundColor = "#4b5069";
+  stopButtonElement.style.backgroundColor = "#cf1124";
+  readyButtonElement.style.backgroundColor = "#1f1d41";
+  goButtonElement.style.backgroundColor = "#1f1d41";
 }
 
-function changeToBeGreen() {
-    colorPickerContainer.style.backgroundColor = "#6fcf97";
-    selectedColorHexCode.textContent = "#6fcf97";
+function turnOnYellow() {
+  stopLightElement.style.backgroundColor = "#4b5069";
+  readyLightElement.style.backgroundColor = "#f7c948";
+  goLightElement.style.backgroundColor = "#4b5069";
+  stopButtonElement.style.backgroundColor = "#1f1d41";
+  readyButtonElement.style.backgroundColor = "#f7c948";
+  goButtonElement.style.backgroundColor = "#1f1d41";
 }
 
-function changeToBeSkyblue() {
-    colorPickerContainer.style.backgroundColor = "#56ccf2";
-    selectedColorHexCode.textContent = "#56ccf2";
-}
-
-function changeToBeViolet() {
-    colorPickerContainer.style.backgroundColor = "#bb6bd9";
-    selectedColorHexCode.textContent = "#bb6bd9";
+function turnOnGreen() {
+  stopLightElement.style.backgroundColor = "#4b5069";
+  readyLightElement.style.backgroundColor = "#4b5069";
+  goLightElement.style.backgroundColor = "#199473";
+  stopButtonElement.style.backgroundColor = "#1f1d41";
+  readyButtonElement.style.backgroundColor = "#1f1d41";
+  goButtonElement.style.backgroundColor = "#199473";
 }
